@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#heading{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+    background-color: rgb(130, 130, 138);
+}
+.main_body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    width: 400px;
+    padding: 30px;
+    background-color: bisque;
+}
+.display_part{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.display_part #display1{
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+}
+.display_part #display2{
+    font-size: 14px;
+    font-weight: 500;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+}
+.button_part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button_part button{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 30px;
+    margin: 10px;
+}
+.ticket_button{
+    background-color: brown;
+    color: aliceblue;
+}

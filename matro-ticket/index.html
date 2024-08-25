@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>discount</title>
+</head>
+<body>
+    
+    <div class="main_body">
+        <div class="main_container">
+            <div><p id="heading">Matro ticket Counter</p></div>
+            <div class="display_part"><input type="text"                placeholder="Give your details" id="display1" readonly>
+                <input type="text" id="display2" readonly>
+            </div>
+            
+            <div class="button_part">
+
+                <button onclick="
+                age = 5;
+                currentDisplay1='Under 5 year';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='your ticket is full free';
+                document.querySelector('#display2').value= currentDisplay2;">Under 5 year</button>
+
+                <button onclick="
+                age = 8;
+                currentDisplay1='under 8 year';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='your ticket is 50% free. plese pay only 50% of amount';
+                document.querySelector('#display2').value= currentDisplay2;">under 8 year</button>
+
+                <button onclick="
+                gender = 'male';
+                currentDisplay1='Male';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='plese pay your full ticket price.';
+                document.querySelector('#display2').value= currentDisplay2;">Male</button>
+
+                <button onclick="
+                gender = 'female';
+                currentDisplay1='Female';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='your ticket is 50% free. plese pay only 50% of amount';
+                document.querySelector('#display2').value= currentDisplay2;">Female</button>
+
+                <button onclick="
+                age = 65;
+                currentDisplay1='Upper 65 year';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='Your ticket is 70% free.plese pay only 30% of amount';
+                document.querySelector('#display2').value= currentDisplay2;">Upper 65 year</button>
+
+                <button class="ticket_button" onclick="
+                age = 65;
+                currentDisplay1='';
+                document.querySelector('#display1').value= currentDisplay1;
+                currentDisplay2='';
+                document.querySelector('#display2').value= currentDisplay2;">Take your ticker</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let age;
+        let gender;
+
+        let result;
+        let currentDisplay1='';
+        let currentDisplay2='';
+        document.querySelector('#display1').value = currentDisplay1;
+        document.querySelector('#display2').value = currentDisplay2;
+    </script>
+</body>
+</html>
